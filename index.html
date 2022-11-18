@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to HTML</title>
+    <!--Import external css-->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <main class="section-1">
+      <div class="calc-main-container border">
+        <div class="calc-solar-power">
+          <div class="calc-solar-power-cell"></div>
+          <div class="calc-solar-power-cell"></div>
+          <div class="calc-solar-power-cell"></div>
+          <div class="calc-solar-power-cell"></div>
+        </div>
+        <div class="calc-display border" id="calc-display">0</div>
+        <hr />
+        <div class="border">
+          <table>
+            <tr>
+              <td><button onclick="handleCalcBtn(this)">C</button></td>
+              <td><button onclick="handleCalcBtn(this)">&radic;</button></td>
+              <td><button onclick="handleCalcBtn(this)">%</button></td>
+              <td><button onclick="handleCalcBtn(this)">M</button></td>
+            </tr>
+          </table>
+          <div class="calc-keyboard">
+            <table>
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><button onclick="handleCalcBtn(this)">7</button></td>
+                  <td><button onclick="handleCalcBtn(this)">8</button></td>
+                  <td><button onclick="handleCalcBtn(this)">9</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="handleCalcBtn(this)">4</button></td>
+                  <td><button onclick="handleCalcBtn(this)">5</button></td>
+                  <td><button onclick="handleCalcBtn(this)">6</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="handleCalcBtn(this)">1</button></td>
+                  <td><button onclick="handleCalcBtn(this)">2</button></td>
+                  <td><button onclick="handleCalcBtn(this)">3</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="handleCalcBtn(this)">0</button></td>
+                  <td><button onclick="handleCalcBtn(this)">.</button></td>
+                  <td><button onclick="handleCalcBtn(this)">=</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tr>
+                <td><button onclick="handleCalcBtn(this)">÷</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="handleCalcBtn(this)">x</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="handleCalcBtn(this)">-</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="handleCalcBtn(this)">+</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <script>
+      console.log("Ready...");
+    </script>
+  </body>
+</html>
